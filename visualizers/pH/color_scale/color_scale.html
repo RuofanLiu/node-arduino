@@ -13,7 +13,7 @@
 
 		<img src="arrow.svg" id="pointer" style="position: absolute; top: 675px; left: 11px; height: 50px;">
 
-		<div id="value" style="position: absolute; top: 170px; left: 72%; font-size: 3em;">
+		<div id="value" style="position: absolute; top: 170px; left: 65%; font-size: 3em;">
 			start
 		</div>
 
@@ -22,11 +22,42 @@
 
 		<img src="Legend.png" id="Legend" style="position: absolute; top: 150px; left: 10%; height: 15%;">
 
-		<div id="explanation" style="position: absolute; top: 360px; left: 9%; font-size: 1.2em;">
+		<div id="explanation" style="position: absolute; top: 120px; left: 78%; font-size: 1.2em;">
 			Every time the pH value increases by 1, the amount of acid ions decrease by 10 times, and the amount of base ions increase by 10 times.
 		</div>
-		<img src="ph-of-common-foods-and-chemicals.png" id="pH objects" style="position: absolute; top: 400px; left: 0%; width: 101%; height: 275px">
+		<!--<img src="ph-of-common-foods-and-chemicals.png" id="pH objects" style="position: absolute; top: 400px; left: 0%; width: 101%; height: 275px">-->
 		
+		<style>
+			div{
+			    width: 150px;
+			    height: 350px;
+			    left:100px;
+			    font-size: 20px;
+			}
+
+			.rotated{
+				-ms-transform:  rotate(-90deg); /* IE 9 */
+				-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+				transform: rotate(-90deg);
+				margin-top: 50px;
+				height: 20px;
+				word-wrap: break-word;
+				white-space: nowrap;
+				font-weight: bolder;
+			}
+			.rotated2{					/*for those with multiple lines of objects*/
+				-ms-transform:  rotate(-90deg); /* IE 9 */
+				-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+				transform:  translateX(-15%) rotate(-90deg);
+				text-align: left;
+				margin-top: 50px;
+				height: 20px;
+				word-wrap: break-word;
+				white-space: nowrap;
+				font-weight: bolder;
+			}
+		</style>
+
 		<script src = "color_scale.js"></script>
 
 	</body>

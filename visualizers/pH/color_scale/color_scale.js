@@ -13,6 +13,7 @@ wrapper = document.getElementById("wrapper");
 divWidth = windowWidth / 15.0;
 
 
+
 for(var i = 0; i < 15; i++) {
 	var new_div = {},
 	divLeft = 0;
@@ -37,6 +38,51 @@ for(var i = 0; i < 15; i++) {
 
 	wrapper.appendChild(new_div);
 }
+
+
+
+
+
+
+for(var i = 0; i < 15; i++) {	//for the shorter division
+	var new_div = {},
+	divLeft = 0;
+
+
+	new_div = document.createElement("div");
+	divLeft = divWidth*i;
+
+	new_div.id = i;
+	new_div.style.position = "absolute";
+	new_div.style.top = "350px";
+	new_div.style.height = "8px";
+	new_div.style.width = divWidth + "px";
+	new_div.innerHTML = i; 
+	new_div.style.display = "flex";
+	new_div.style.justifyContent = "center";
+	new_div.style.paddingTop = "45px";
+
+
+	new_div.style.left = divLeft + "px";
+	new_div.style.backgroundColor = divColors[i];
+
+	wrapper.appendChild(new_div);
+}
+document.getElementById('0').innerHTML = "<div class='rotated'>Battery Acid -- 0</div>";
+document.getElementById('1').innerHTML = "<div class='rotated2'>&nbspStomach Acid -- 1.0<br>&nbspLime Juice -- 1.8 - 2.0<br>&nbspVinegar -- 2.0. - 3.4</div>";
+document.getElementById('2').innerHTML = "<div class='rotated2'>&nbspLemon juice -- 2.2 - 2.4<br>&nbspCoca-Cola --2.5<br>&nbspCider -- 2.9 - 3.3</div>";
+document.getElementById('3').innerHTML = "<div class='rotated2'>&nbspStrawberries -- 3.0 - 3.5<br>&nbspYeasts -- 3.0 - 3.5<br>&nbspJams/Jellies -- 3.1 - 3.5</div>";
+document.getElementById('4').innerHTML = "<div class='rotated2'>&nbspApples -- 3.3 - 4.0<br>&nbspHoney -- 3.9<br>&nbspTomatoes -- 4.2 - 4.1</div>";
+document.getElementById('5').innerHTML = "<div class='rotated2'>Sugar -- 5.0 - 6.0<br>Beef -- 5.1 - 6.2<br>Pork -- 5.3 - 6.9</div>";
+document.getElementById('6').innerHTML = "<div class='rotated2'>&nbspOnions -- 5.3 - 5.8<br>&nbspLettuce -- 5.8 - 6.0<br>&nbspRice -- 6.0 - 6.7</div>";
+document.getElementById('7').innerHTML = "<div class='rotated2'>Butter -- 6.1 - 6.4<br>Egg Yolk -- 6.4<br>Pure Water -- 7.0</div>";
+document.getElementById('8').innerHTML = "<div class='rotated2'>&nbspMilk -- 6.3 - 8.5<br>&nbspCrackers -- 7.0 - 8.5<br>&nbspEgg White -- 7.0 - 9.0</div>";
+document.getElementById('9').innerHTML = "<div class='rotated'>&nbspBaking Soda -- 9.0</div>";
+document.getElementById('10').innerHTML = "<div class='rotated'>Antacids -- 10</div>";
+document.getElementById('11').innerHTML = "<div class='rotated'>Ammonia -- 11</div>";
+document.getElementById('12').innerHTML = "<div class='rotated'>Calcium Hydroxide -- 12</div>";
+document.getElementById('13').innerHTML = "<div class='rotated'>Lye -- 13</div>";
+document.getElementById('14').innerHTML = "<div class='rotated'>Potassium Hydroxide -- 14</div>";
 
 value = document.getElementById
 
